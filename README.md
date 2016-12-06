@@ -1,4 +1,4 @@
-# Document Statistics of the The Signal Media One-Million News Articles Dataset 
+# Document Statistics of the The Signal 1M News Articles Dataset
 
 The [Signal Media One-Million News Articles Dataset](http://research.signalmedia.co/newsir16/signal-dataset.html) was released to facilitate conducting research on news articles.
 The dataset is shipped as a single text file having 1000000 lines each of which is a JSON object representing an article. 
@@ -12,7 +12,7 @@ Each article has the following fields:
 * **media-type**: either "News" or "Blog"
 Below is an excerpt from the dataset: (content has been truncated)
 
-``` json
+```json
 {
   "id": "e9c0f76d-0199-4dbf-a523-51b7f45a134b",
   "content": "This special edition of Fund This features what very well may be the most epic geek campaign ever.",
@@ -54,7 +54,7 @@ averageLength:396.80339
 ```
 
 The starter code contains all the useful stuff: Enums (TYPE, FIELD) for the command line arguments, Article class that encapsulate articles, CountFunction that returns the number of words in a string and the following helper method:
-``` java
+```java
 static void printStats(String file, FIELD field, java.time.Month month, TYPE type) throws IOException {
 
         IntSummaryStatistics summaryStatistics = Files.lines(Paths.get(file), StandardCharsets.US_ASCII)
